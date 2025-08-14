@@ -24,9 +24,7 @@
     </div>
     <div class="header-right">
       <Timestamp />
-      <div class="logo-container">
-        <img class="logo-image" src={logoSrc} alt="Logo" />
-      </div>
+      <img class="logo-image" src={logoSrc} alt="Logo" />
     </div>
   </div>
 </div>
@@ -37,39 +35,34 @@
     background-color: white;
     padding: 1rem;
     color: black;
-    border: 1px solid rgb(0, 255, 17);
   }
 
   .header-content {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    border: 1px solid rgb(81, 0, 255);
+    align-items: stretch;
   }
 
   .header-left {
     flex: 1;
-    border: 1px solid rgb(255, 217, 0);
   }
 
   .header-right {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 0.5rem;
-    border: 1px solid red;
+    justify-content: space-between;
+    min-height: 100%;
   }
 
   .room-name {
-    font-size: 1.125rem;
+    font-size: 1.5rem;
     font-weight: 600;
-    margin: 0 0 0.5rem 0;
   }
 
   .subtitle {
     font-size: 0.8rem;
     color: #374151;
-    margin-bottom: 0.25rem;
   }
 
   .mode {
@@ -78,15 +71,10 @@
     color: #1f2937;
   }
 
-  .logo-container {
+  .logo-image {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-  }
-
-  .logo-container :global(svg) {
-    width: 100%;
-    height: 100%;
   }
 
   @media (min-width: 768px) {
@@ -101,21 +89,11 @@
     .subtitle, .mode {
       font-size: 0.875rem;
     }
-    
-    .logo-container {
-      width: 100px;
-      height: 25px;
-    }
   }
 
   @media (min-width: 1024px) {
     .room-name {
       font-size: 1.75rem;
-    }
-    
-    .logo-container {
-      width: 120px;
-      height: 30px;
     }
   }
 </style>
