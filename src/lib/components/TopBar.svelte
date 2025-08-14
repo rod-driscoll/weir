@@ -1,18 +1,18 @@
 <!-- TopBar.svelte -->
 <script lang="ts">
-    import LanguageSelector from './LanguageSelector.svelte';
+    //import LanguageSelector from '../../assets/unused/LanguageSelector.svelte';
+    //import Logo from '../../assets/unused/Logo.svelte';
+    //import { icons } from '../data/icons'; // Importing icons for navigation
     import Timestamp from './Timestamp.svelte';
-    import Logo from './Logo.svelte';
-    import { icons } from '../data/icons'; // Importing icons for navigation
     import { currentSettings } from '../data/texts.svelte'; // Importing current settings
-        
+
     function navigateTo(page: string) {
         currentSettings.Page = page;
         // Logic to handle navigation can be added here
     }
+    let { roomName, subtitle, combine, logoSrc } = $props();
+   
     console.log(`TopBar initialised`)
-
-    let { roomName, subtitle, mode, logoSrc } = $props();
 </script>
 
 <div class="header">
@@ -20,7 +20,7 @@
     <div class="header-left">
       <h1 class="room-name">{roomName}</h1>
       <div class="subtitle">{subtitle}</div>
-      <div class="mode">{mode}</div>
+      <div class="mode">{combine.state ? 'Rooms Combined' : 'Not combined'}</div>
     </div>
     <div class="header-right">
       <Timestamp />

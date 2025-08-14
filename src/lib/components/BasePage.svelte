@@ -3,11 +3,11 @@
     import MainContent from './MainContent.svelte';
     //import BottomBar from './BottomBar.svelte';
     //import PowerDialog from './PowerDialog.svelte';
-    import { currentSettings } from '../data/texts.svelte';
+    //import { currentSettings } from '../data/texts.svelte';
     
-    //import { qrwcSvelte } from "../qrwc";
-    //const roomCombineComponent = qrwcSvelte.useComponent('Room_Combiner');
-    //const roomCombineStatus = roomCombineComponent.useButton('wall.1.open');
+    import { qrwcSvelte } from "../qrwc";
+    const roomCombineComponent = qrwcSvelte.useComponent('Room_Combiner');
+    const roomCombineStatus = roomCombineComponent.useButton('wall.1.open');
     //const roomControlsComponent = qrwcSvelte.useComponent(roomController);
 
     console.log(`BasePage initialised`)
@@ -15,7 +15,7 @@
   let roomData = {
     roomName: "Training room 1",
     subtitle: "Weir Minerals", 
-    mode: "Not combined",
+    combine: roomCombineStatus,
     logoSrc: "https://upload.wikimedia.org/wikipedia/commons/b/b8/Weir-Logo.svg"
   };
 
@@ -25,7 +25,7 @@
     {#if false} <!-- Placeholder for future splash screen -->
     {/if}
     <TopBar {...roomData} />
-    <MainContent />
+    <MainContent {...roomData}  />
 </div>
 
 <style>

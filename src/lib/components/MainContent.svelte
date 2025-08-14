@@ -1,14 +1,19 @@
 <!-- MainContent.svelte -->
 <script lang="ts">
-    import HomePage from './HomePage.svelte';
+    import CombinePage from './CombinePage.svelte';
     //import CamerasPage from './CamerasPage.svelte';
     //import HelpPage from './HelpPage.svelte';
-    import {  currentSettings } from '../data/texts.svelte';
+    //import { currentSettings } from '../data/texts.svelte';
+    
+    let { combine } = $props();
+   
+    console.log(`MainContent initialised`)
 </script>
 
 <div class="main-content"> 
+    <div class="mode">{combine.state ? 'Rooms Combined' : 'Not combined'}</div>
     <div class="overlay">
-            <HomePage />
+        <CombinePage  {...combine} />
     </div>
 </div>
 

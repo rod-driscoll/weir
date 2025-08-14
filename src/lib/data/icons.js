@@ -49,4 +49,30 @@ export const icons = {
     angleDownRight: '<svg viewBox="0 0 256 256"><path d="M88,168 L168,88 L168,168" fill="none" stroke="currentColor" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/></svg>',
     tv: '<svg viewBox="0 0 256 256"><rect x="32" y="48" width="192" height="144" rx="16" fill="none" stroke="currentColor" stroke-width="16"/><polyline points="176 224 176 192 80 192 80 224" fill="none" stroke="currentColor" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/></svg>',
     videoCamera: '<svg viewBox="0 0 256 256"><rect x="32" y="72" width="144" height="112" rx="8"/><path d="M176,100.69v54.62a8,8,0,0,0,12.38,6.69l32-21.33a8,8,0,0,0,0-13.34l-32-21.33A8,8,0,0,0,176,100.69Z"/></svg>',
+    combineRooms: `<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="currentColor" stroke-width="3" fill="none">
+            <!-- Left room -->
+            <rect x="20" y="60" width="60" height="80" rx="4"/>
+            <!-- Right room -->
+            <rect x="120" y="60" width="60" height="80" rx="4"/>
+            <!-- Arrow pointing inward -->
+            <path d="M85 100 L95 100 M95 100 L90 95 M95 100 L90 105" stroke-linecap="round"/>
+            <path d="M115 100 L105 100 M105 100 L110 95 M105 100 L110 105" stroke-linecap="round"/>
+            <!-- Combined indicator -->
+            <circle cx="100" cy="100" r="8" fill="currentColor"/>
+        </g>
+    </svg>`,
+    separateRooms: `<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="currentColor" stroke-width="3" fill="none">
+            <!-- Left room -->
+            <rect x="30" y="60" width="60" height="80" rx="4"/>
+            <!-- Right room -->
+            <rect x="110" y="60" width="60" height="80" rx="4"/>
+            <!-- Wall between rooms -->
+            <line x1="100" y1="50" x2="100" y2="150" stroke-width="4" stroke-dasharray="8,4"/>
+            <!-- Arrows pointing outward -->
+            <path d="M75 100 L65 100 M65 100 L70 95 M65 100 L70 105" stroke-linecap="round"/>
+            <path d="M125 100 L135 100 M135 100 L130 95 M135 100 L130 105" stroke-linecap="round"/>
+        </g>
+    </svg>`,
 };

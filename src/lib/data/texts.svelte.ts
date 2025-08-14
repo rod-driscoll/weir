@@ -6,6 +6,7 @@
 
 interface RoomText {
   [key: string]: {
+    Connected: string[];
     Sources: string[];
     Pages: string[];
     SplashText: string;
@@ -20,6 +21,7 @@ interface RoomText {
     ShutdownPrompt: string;
     ShutdownYes: string;
     ShutdownNo: string;
+    Combined: string[];
   };
 }
 interface HelpData {
@@ -37,6 +39,7 @@ export const helpData: HelpData = {
     DefaultLanguage: "English",
     RoomText: {
         "English": {
+            "Connected": ["Connected", "Not Connected"],
             "Sources": ["Source One", "Source Two", "Source Three"],
             "Pages": ["Cameras", "Help", "Home"],
             "SplashText": "Touch to Begin",
@@ -51,8 +54,10 @@ export const helpData: HelpData = {
             "ShutdownPrompt": "Are You Sure You Want to Shut Down the System?",
             "ShutdownYes": "Yes, Shut System Down",
             "ShutdownNo": "No, Cancel",
+            "Combined": ["Rooms combined", "Rooms separated", "Room 1", "Room 2", "Room 3"],
         },
         "Chinese/中文": {
+            "Connected": ["Connected", "Not Connected"],
             "Sources": ["信号源 1", "信号源 2", "信号源 3"],
             "Pages": ["摄像机", "帮助", "首页"],
             "SplashText": "点击开始",
@@ -66,9 +71,11 @@ export const helpData: HelpData = {
             "HelpEmailPrompt": "发送电子邮件报告此问题:",
             "ShutdownPrompt": "确定要关闭系统吗？",
             "ShutdownYes": "是的，关闭系统",
-            "ShutdownNo": " 取消 "
+            "ShutdownNo": " 取消 ",
+            "Combined": ["Rooms combined", "Rooms separated", "Room 1", "Room 2", "Room 3"],
         },
         "Deutsch": {
+            "Connected": ["Connected", "Not Connected"],
             "Sources": ["Quelle Eins", "Quelle Zwei", "Quelle Drei"],
             "Pages": ["Kameras", "Hilfe", "Home"],
             "SplashText": "Zum Beginnen berühren",
@@ -82,9 +89,12 @@ export const helpData: HelpData = {
             "HelpEmailPrompt": "Email um Probleme zu melden:",
             "ShutdownPrompt": "Sicher dass du das System herunterfahren möchtest?",
             "ShutdownYes": "Ja, fahre das System herunter.",
-            "ShutdownNo": "Nein, Abbruch."
+            "ShutdownNo": "Nein, Abbruch.",
+            "Combined": ["Rooms combined", "Rooms separated", "Room 1", "Room 2", "Room 3"],
+
         },
         "Français": {
+            "Connected": ["Connected", "Not Connected"],
             "Sources": ["Source 1", "Source 2", "Source 3"],
             "Pages": ["Caméra", "Aide", "Accueil"],
             "SplashText": "Toucher pour commencer",
@@ -98,9 +108,12 @@ export const helpData: HelpData = {
             "HelpEmailPrompt": "Envoyer un e-mail:",
             "ShutdownPrompt": "Êtes-vous sûr de vouloir arrêter le système?",
             "ShutdownYes": "Oui, arrêter le système",
-            "ShutdownNo": "Non, annuler"
+            "ShutdownNo": "Non, annuler",
+            "Combined": ["Rooms combined", "Rooms separated", "Room 1", "Room 2", "Room 3"],
+
         },
         "Spanish": {
+            "Connected": ["Connected", "Not Connected"],
             "Sources": ["Fuente Uno", "Fuente Dos", "Fuente Tres"],
             "Pages": ["Cámaras", "Ayuda", "Inicio"],
             "SplashText": "Toque para Iniciar",
@@ -114,9 +127,12 @@ export const helpData: HelpData = {
             "HelpEmailPrompt": "Enviar un Email para Reportar Problemas:",
             "ShutdownPrompt": "¿Desea Apagar el Sistema?",
             "ShutdownYes": "Sí, Apaga el Sistema",
-            "ShutdownNo": "No, Cancelar"
+            "ShutdownNo": "No, Cancelar",
+            "Combined": ["Rooms combined", "Rooms separated", "Room 1", "Room 2", "Room 3"],
+
         },
         "Portuguese": {
+            "Connected": ["Connected", "Not Connected"],
             "Sources": ["Fonte Um", "Fonte Dois", "Fonte Três"],
             "Pages": ["Câmeras", "Ajuda", "Início"],
             "SplashText": "Toque para Começar",
@@ -130,9 +146,12 @@ export const helpData: HelpData = {
             "HelpEmailPrompt": " Envie um Email para Relatar Problemas:",
             "ShutdownPrompt": "¿Você quer desligar o sistema?",
             "ShutdownYes": " Sim, Desligue o Sistema ",
-            "ShutdownNo": " Não, Cancelar "
+            "ShutdownNo": " Não, Cancelar ",
+            "Combined": ["Rooms combined", "Rooms separated", "Room 1", "Room 2", "Room 3"],
+
         },
         "L33t": {
+            "Connected": ["Connected", "Not Connected"],
             "Sources": ["50u2c3 0n3", "50u2c3 7w0", "50u2c3 7h233"],
             "Pages": ["C4m3245", "H31p", "H0m3"],
             "SplashText": "70uch 70 8391n",
@@ -146,7 +165,9 @@ export const helpData: HelpData = {
             "HelpEmailPrompt": "3m411 70 23p027 155u35:",
             "ShutdownPrompt": "423 y0u 5u23 y0u w4n7 70 5hu7 d0wn 7h3 5y573m?",
             "ShutdownYes": "Y35, 5hu7 5y573m d0wn",
-            "ShutdownNo": "N0, c4nc31"
+            "ShutdownNo": "N0, c4nc31",
+            "Combined": ["Rooms combined", "Rooms separated", "Room 1", "Room 2", "Room 3"],
+
         }
     } as RoomText
 };

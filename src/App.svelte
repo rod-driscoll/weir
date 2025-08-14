@@ -1,20 +1,11 @@
 <script lang="ts">
-  //import { qrwcSvelte } from './lib/qrwc';
-  //import MainPage from './lib/components/MainPage.svelte';
+  import { qrwcSvelte } from './lib/qrwc';
   import BasePage from './lib/components/BasePage.svelte';
-  //import { texts } from './lib/data/texts';
-
-  let roomData = {
-    roomController: "Room 1 controller"
-  };  
-
+  //import MainPage from './lib/components/MainPage.svelte';
+  //import { texts } from './lib/data/texts.texts.svelte';
 </script>
 
-<!--
 {#if qrwcSvelte.isConnected}
-  <MainPage />
--->
-{#if true}
   <div class="app-container">
     <BasePage />
   </div>

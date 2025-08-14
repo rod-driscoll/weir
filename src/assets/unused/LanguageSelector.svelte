@@ -1,7 +1,7 @@
 <!-- Language Selector -->
 <script lang="ts">
-    import { currentSettings } from '../data/texts.svelte'; 
-    import { icons } from '../data/icons';
+    import { currentSettings } from '../../lib/data/texts.svelte'; 
+    import { icons } from '../../lib/data/icons';
 
     let currentLanguage = 'en';
     let showLanguageDropdown = false;
