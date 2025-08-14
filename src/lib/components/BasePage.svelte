@@ -14,9 +14,9 @@
     
   let roomData = {
     roomName: "Training room 1",
-    timestamp: "Wed 4th Jun | 6:38pm",
     subtitle: "Weir Minerals", 
-    mode: "Not combined"
+    mode: "Not combined",
+    logoSrc: "https://upload.wikimedia.org/wikipedia/commons/b/b8/Weir-Logo.svg"
   };
 
 </script>
