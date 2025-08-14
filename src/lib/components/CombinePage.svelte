@@ -138,7 +138,7 @@
         }
 
         .room-button {
-            min-height: 200px;
+            min-height: 100px;
             padding: 30px;
         }
 
