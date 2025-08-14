@@ -1,0 +1,106 @@
+/* Import Open Sans font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+/* Root variables from the provided CSS */
+:root {
+    --DarkColor: #2c3740;
+    --LightColor: #ffffff;
+    --DarkGreyColor: #404040;
+    --MediumGreyColor: #616262;
+    --LightGreyColor: #e6e9ed;
+    --PrimaryColor: #0076bf;
+    --PrimaryColorLight: #72aad8;
+    --PrimaryColorDark: #103b5b;
+    --Color2: #842462;
+    --Color2Light: #c48ab2;
+    --Color3: #719e1b;
+    --Color3Light: #c0d39f;
+    --Color4: #d6a836;
+    --Color4Light: #f7e2be;
+    --Color5: #324175;
+    --Color5Light: #a3b1d1;
+    --StopColor: #b40f00;
+    --GoColor: #719e1b;
+    --BorderDecoration: 3px;
+    --BorderRadius: 6px;
+    --MyFont: "Open Sans", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--MyFont);
+    width: 1280px;
+    height: 800px;
+    overflow: hidden;
+    position: relative;
+    background-color: var(--LightGreyColor);
+}
+
+/* App container */
+#app {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.control-group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.control-label {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--StopColor);
+    min-width: 150px;
+    text-align: center;
+}
+
+.control-button {
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 3px solid var(--DarkGreyColor);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: var(--DarkGreyColor);
+    transition: all 0.2s;
+}
+
+.control-button:hover {
+    background-color: var(--DarkGreyColor);
+    color: var(--LightColor);
+}
+
+/* Icons */
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+}
+
+/* Dark overlay for dialogs */
+.dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 199;
+    display: none;
+}
+
+.dialog-overlay.active {
+    display: block;
+}
